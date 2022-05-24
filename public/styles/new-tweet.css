@@ -1,0 +1,29 @@
+.new-tweet {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+#tweet-text {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 4px solid black;
+  resize: none;
+}
+
+.button-counter {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Bungee', cursive;
+  margin-top: 0.5em;
+}
+
+.button-counter button {
+  background-color: #4056A1;
+  border: none;
+  color: white;
+  padding: 0.2em 0.5em;
+  border-radius: 5px;
+}
