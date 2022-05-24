@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text Area</title>
+  <script>
+    document.addEventListener('input', (event) => {
+      console.log('You just input something')
+    })
+    document.addEventListener('input', (event) => {
+      console.log('You pressed up key')
+    })
+    document.addEventListener('keypress', (event) => {
+      console.log('You pressed a key')
+    })
+    document.addEventListener('keydown', (event) => {
+      console.log('You just pressed the key down')
+    })
+  </script>
+</head>
+
+<body>
+  <textarea name="text" id="textarea">
+  </textarea>
+</body>
+
+</html>
