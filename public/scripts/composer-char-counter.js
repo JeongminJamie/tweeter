@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $('textarea').on('input', function () {
+  $('#tweet-text').on('input', function () {
 
     let $numberOfCharacter = $(this).val().length;
     let $remainingCounter = (140 - $numberOfCharacter);

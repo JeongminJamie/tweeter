@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
   <!-- Meta Information -->
   <title>Tweeter - Home Page</title>
 
@@ -13,17 +14,21 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
     type="text/css" />
 
-  <!-- Bungee/ Source Sans Pro fonts -->
+  <!-- Sources of fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Source+Sans+Pro:ital,wght@1,300;1,600&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css">
   <link rel="stylesheet" href="/styles/header.css" type="text/css">
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
+  <link rel="stylesheet" href="/styles/main-container.css" type="text/css">
 
 
   <!-- External JS -->
@@ -40,7 +45,7 @@
   <nav>
     <span>tweeter</span>
   </nav>
-  <header>
+  <header class="nav-header">
     <div>
       <img src="/images/profile-hex.png">
     </div>
@@ -62,6 +67,30 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
+      <div class="main-container">
+        <article class="main">
+          <header class="maincontainer-header">
+            <div class="left-header">
+              <img src="https://i.imgur.com/73hZDYK.png">
+              <span>Newton</span>
+            </div>
+            <span>@SirIssac</span>
+          </header>
+          <textarea name="text" class="main-textarea"></textarea>
+          <footer class="main-footer">
+            <span>10 days ago</span>
+            <div class="right-footer">
+              <i class="fa-solid fa-flag" id="first-icon"></i>
+              &nbsp
+              &nbsp
+              <i class="fa-solid fa-retweet" id="second-icon"></i>
+              &nbsp
+              &nbsp
+              <i class="fa-solid fa-heart" id="third-icon"></i>
+            </div>
+          </footer>
+        </article>
+      </div>
     </section>
   </main>
 </body>
