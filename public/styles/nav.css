@@ -1,5 +1,4 @@
 nav {
-  font-family: 'Bungee', cursive;
   color: #FFFFFF;
   height: 120px;
   width: 100%;
@@ -11,4 +10,31 @@ nav {
   position: fixed;
   z-index: 1;
   top: 0;
+}
+
+span.tweeter-font {
+  font-family: 'Bungee', cursive;
+}
+
+div.nav-right {
+  font-size: 20px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+span.first-right {
+  font-weight: bold;
+}
+
+span.second-right {
+  font-weight: normal;
+}
+
+div.arrow-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: red;
 }

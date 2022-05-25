@@ -1,7 +1,6 @@
-div.main-container {
+div.tweets-container {
   display: flex;
   flex-direction: column;
-  border: 4px solid #4f473c;
   margin: auto;
   margin-top: 1em;
   padding: 0.5em;
@@ -9,7 +8,14 @@ div.main-container {
   min-width: 760px;
 }
 
-header.maincontainer-header {
+article.tweets-article {
+  border: 4px solid #4f473c;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+header.tweets-container-header {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -18,7 +24,7 @@ header.maincontainer-header {
   color: #C0C0C0;
 }
 
-div.left-header {
+div.left-tweets-header {
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -27,7 +33,7 @@ div.left-header {
 }
 
 
-textarea.main-textarea {
+textarea.tweets-textarea {
   width: 100%;
   border: 0;
   outline: 0;
@@ -37,31 +43,31 @@ textarea.main-textarea {
   color: #4f473c;
 }
 
-footer.main-footer {
+footer.tweets-footer {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-bottom: 2em;
   font-size: 17px;
 }
 
-div.right-footer {
+div.right-tweets-footer {
   display: flex;
   align-items: center;
   flex-direction: row;
   color: MidnightBlue;
 }
 
-#first-icon:hover {
+#first-tweets-icon:hover {
   color: Gold;
 }
 
-#second-icon:hover {
+#second-tweets-icon:hover {
   color: Gold;
 }
 
-#third-icon:hover {
+#third-tweets-icon:hover {
   color: Gold;
 }

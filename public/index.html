@@ -21,14 +21,14 @@
     rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- App CSS -->
   <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
   <link rel="stylesheet" href="/styles/nav.css" type="text/css">
   <link rel="stylesheet" href="/styles/header.css" type="text/css">
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css">
-  <link rel="stylesheet" href="/styles/main-container.css" type="text/css">
+  <link rel="stylesheet" href="/styles/tweets-container.css" type="text/css">
 
 
   <!-- External JS -->
@@ -43,7 +43,14 @@
 <body>
   <!-- Top nav bar (fixed) -->
   <nav>
-    <span>tweeter</span>
+    <span class="tweeter-font">tweeter</span>
+    <div class="nav-right">
+      <span class="first-right">Write<span></span>
+        <span class="second-right">a new tweet</span>
+        <div class="arrow-icon">
+          <i class="fa-solid fa-angles-down"></i>
+        </div>
+    </div>
   </nav>
   <header class="nav-header">
     <div>
@@ -67,26 +74,27 @@
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
-      <div class="main-container">
-        <article class="main">
-          <header class="maincontainer-header">
-            <div class="left-header">
+      <div class="tweets-container">
+        <article class="tweets-article">
+          <header class="tweets-container-header">
+            <div class="left-tweets-header">
               <img src="https://i.imgur.com/73hZDYK.png">
+              &nbsp
               <span>Newton</span>
             </div>
             <span>@SirIssac</span>
           </header>
-          <textarea name="text" class="main-textarea"></textarea>
-          <footer class="main-footer">
+          <textarea name="text" class="tweets-textarea"></textarea>
+          <footer class="tweets-footer">
             <span>10 days ago</span>
-            <div class="right-footer">
-              <i class="fa-solid fa-flag" id="first-icon"></i>
+            <div class="right-tweets-footer">
+              <i class="fa-solid fa-flag" id="first-tweets-icon"></i>
               &nbsp
               &nbsp
-              <i class="fa-solid fa-retweet" id="second-icon"></i>
+              <i class="fa-solid fa-retweet" id="second-tweets-icon"></i>
               &nbsp
               &nbsp
-              <i class="fa-solid fa-heart" id="third-icon"></i>
+              <i class="fa-solid fa-heart" id="third-tweets-icon"></i>
             </div>
           </footer>
         </article>
