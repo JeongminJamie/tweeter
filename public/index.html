@@ -38,6 +38,11 @@
   <script type="text/javascript" src="/scripts/client.js"></script>
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
 
+  <!-- Timeago js-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 </head>
 
 <body>
@@ -58,7 +63,7 @@
     </div>
     <br>
     <div>
-      <h2>Your Name</h2>
+      <h2>Jeongmin</h2>
     </div>
   </header>
 
@@ -70,34 +75,12 @@
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
         <div class="button-counter">
-          <button type="submit">Tweet</button>
+          <button id="tweet-button" type="submit">Tweet</button>
           <output name="counter" class="counter" for="tweet-text">140</output>
         </div>
       </form>
       <div class="tweets-container">
-        <article class="tweets-article">
-          <header class="tweets-container-header">
-            <div class="left-tweets-header">
-              <img src="https://i.imgur.com/73hZDYK.png">
-              &nbsp
-              <span>Newton</span>
-            </div>
-            <span>@SirIssac</span>
-          </header>
-          <textarea name="text" class="tweets-textarea"></textarea>
-          <footer class="tweets-footer">
-            <span>10 days ago</span>
-            <div class="right-tweets-footer">
-              <i class="fa-solid fa-flag" id="first-tweets-icon"></i>
-              &nbsp
-              &nbsp
-              <i class="fa-solid fa-retweet" id="second-tweets-icon"></i>
-              &nbsp
-              &nbsp
-              <i class="fa-solid fa-heart" id="third-tweets-icon"></i>
-            </div>
-          </footer>
-        </article>
+        <!-- tweets -->
       </div>
     </section>
   </main>
