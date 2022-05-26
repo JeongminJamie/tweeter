@@ -16,8 +16,8 @@ $(document).ready(function () {
     </div>
     <span>${tweet.user.handle}</span>
   </header>
-  <textarea name="text" class="tweets-textarea">${tweet.content.text}
-  </textarea>
+  <div class="tweets-underline">${tweet.content.text}
+  </div>
   <footer class="tweets-footer">
     <span>${timeago.format(tweet.created_at)}</span>
     <div class="right-tweets-footer">
@@ -45,19 +45,20 @@ $(document).ready(function () {
     event.preventDefault();
 
     if ($('form textarea').val() === "" || $('form textarea').val().length > 140) {
-      alert('Please match the number of letters to the form');
+      $('#error-message').slideDown("slow");
+    } else {
+      $('#error-message').slideUp();
+      const $serializedText = $(this).serialize();
+
+      $.ajax('/tweets/', { method: 'POST', data: $serializedText })
+        .done(function () {
+          $('.tweets-container').empty();
+          loadTweets();
+        })
+        .fail(function (error) {
+          console.error(error);
+        })
     }
-
-    const $serializedText = $(this).serialize();
-
-    $.ajax('/tweets/', { method: 'POST', data: $serializedText })
-      .done(function () {
-        $('.tweets-container').empty();
-        loadTweets();
-      })
-      .fail(function (error) {
-        console.error(error);
-      })
   });
 
   const loadTweets = function () {
