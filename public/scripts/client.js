@@ -49,7 +49,15 @@ $(document).ready(function () {
     }
 
     const $serializedText = $(this).serialize();
+
     $.ajax('/tweets/', { method: 'POST', data: $serializedText })
+      .done(function () {
+        $('.tweets-container').empty();
+        loadTweets();
+      })
+      .fail(function (error) {
+        console.error(error);
+      })
   });
 
   const loadTweets = function () {
@@ -58,12 +66,13 @@ $(document).ready(function () {
         return response.json;
       })
       .done(function (jsonResponse) {
-        return renderTweets(jsonResponse);
+        let sortedArray = jsonResponse.sort((a, b) => b.created_at - a.created_at);
+        return renderTweets(sortedArray);
       })
       .fail(function (error) {
         console.error(error);
       })
-  }
+  };
 
   loadTweets();
 
