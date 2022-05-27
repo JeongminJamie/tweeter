@@ -60,34 +60,36 @@
         </div>
     </div>
   </nav>
-  <header class="nav-header">
-    <div>
-      <img src="/images/profile-hex.png">
-    </div>
-    <br>
-    <div>
-      <h2>Jeongmin Choi</h2>
-    </div>
-  </header>
-
-
-  <!-- Page-specific (main) content here -->
-  <main class="container">
-    <section class="new-tweet">
-      <span id="error-message">⚠️ Please mind the minimum and maximum numbers ⚠️</span>
-      <form method="POST" action="/tweets/">
-        <label for="tweet-text">What are you humming about?</label>
-        <textarea name="text" id="tweet-text"></textarea>
-        <div class="button-counter">
-          <button id="tweet-button" type="submit">Tweet</button>
-          <output name="counter" class="counter" for="tweet-text">140</output>
-        </div>
-      </form>
-      <div class="tweets-container">
-        <!-- tweets -->
+  <section class="header-main">
+    <header class="first-header">
+      <div>
+        <img src="/images/profile-hex.png">
       </div>
-    </section>
-  </main>
+      <br>
+      <div>
+        <h2>Jeongmin Choi</h2>
+      </div>
+    </header>
+
+
+    <!-- Page-specific (main) content here -->
+    <main class="container">
+      <section class="new-tweet">
+        <span id="error-message">⚠️ Please mind the minimum and maximum numbers ⚠️</span>
+        <form method="POST" action="/tweets/">
+          <label for="tweet-text">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
+          <div class="button-counter">
+            <button id="tweet-button" type="submit">Tweet</button>
+            <output name="counter" class="counter" for="tweet-text">140</output>
+          </div>
+        </form>
+        <div class="tweets-container">
+          <!-- tweets -->
+        </div>
+      </section>
+    </main>
+  </section>
 </body>
 
 </html>

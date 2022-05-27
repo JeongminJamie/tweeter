@@ -1,11 +1,10 @@
-header.nav-header {
+header.first-header {
   color: rgb(241, 234, 221);
   height: 400px;
-  width: 100%;
+  flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 120px;
   flex-direction: column;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
   background-color: sandybrown;

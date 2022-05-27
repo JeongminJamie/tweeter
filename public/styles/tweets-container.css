@@ -5,7 +5,6 @@ div.tweets-container {
   margin-top: 1em;
   padding: 0.5em;
   width: 100%;
-  min-width: 760px;
 }
 
 article.tweets-article {
@@ -42,6 +41,7 @@ div.tweets-underline {
   border-bottom: 4px solid #4f473c;
   resize: none;
   color: #4f473c;
+  padding: 5px;
 }
 
 footer.tweets-footer {
@@ -51,7 +51,7 @@ footer.tweets-footer {
   justify-content: space-between;
   margin-top: 0.5em;
   margin-bottom: 2em;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 div.right-tweets-footer {
@@ -63,12 +63,15 @@ div.right-tweets-footer {
 
 #first-tweets-icon:hover {
   color: Gold;
+  cursor: pointer;
 }
 
 #second-tweets-icon:hover {
   color: Gold;
+  cursor: pointer;
 }
 
 #third-tweets-icon:hover {
   color: Gold;
+  cursor: pointer;
 }
