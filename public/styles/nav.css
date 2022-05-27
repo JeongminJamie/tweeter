@@ -21,6 +21,7 @@ div.nav-right {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
+  cursor: pointer;
 }
 
 span.first-right {
