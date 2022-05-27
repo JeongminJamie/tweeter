@@ -4,8 +4,8 @@ Tweeter project is made for practice of HTML, CSS, responsive design using Qquer
 
 ## Final Product
 
-!["screenshot description"](#)
-!["screenshot description"](#)
+!["tweeter error box"](https://raw.githubusercontent.com/JeongminJamie/tweeter/e4f630d81eac3fa90fa1133b86351e8b073ba02e/doc/tweeter-error.png)
+!["tweeter page"](https://raw.githubusercontent.com/JeongminJamie/tweeter/e4f630d81eac3fa90fa1133b86351e8b073ba02e/doc/tweeter-page.png)
 
 ## Dependencies
 
