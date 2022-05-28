@@ -22,7 +22,6 @@ body {
   background-color: #F5DEB3;
   font-size: 24px;
   font-family: 'Raleway', sans-serif;
-  overflow-x: hidden;
 }
 
 main {
@@ -34,10 +33,11 @@ main {
   font-weight: bold;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   main {
     height: 100%;
     flex: 1;
+    width: 50%
   }
 
   header.first-header {
@@ -52,17 +52,17 @@ main {
     padding-top: 240px;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    column-gap: 4em;
+    /* justify-content: space-between; */
+    column-gap: 3em;
     height: 100vh;
-    align-items: start;
+    width: 100%;
     padding-left: 2em;
     padding-right: 2em;
   }
 
 }
 
-@media only screen and (max-width: 1023px) {
+/* @media only screen and (max-width: 1023px) {
   header.first-header {
     margin-top: 120px;
   }
@@ -70,4 +70,4 @@ main {
   main {
     margin-top: 120px;
   }
-}
+} */

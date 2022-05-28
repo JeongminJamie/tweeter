@@ -48,12 +48,15 @@ $(document).ready(function () {
       $('#error-message').slideDown("slow");
     } else {
       $('#error-message').slideUp();
+
       const $serializedText = $(this).serialize();
 
       $.ajax('/tweets/', { method: 'POST', data: $serializedText })
         .done(function () {
           $('.tweets-container').empty();
           loadTweets();
+          $('form textarea').val("");
+          $('output.counter').val(140);
         })
         .fail(function (error) {
           console.error(error);

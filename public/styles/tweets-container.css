@@ -15,6 +15,11 @@ article.tweets-article {
   word-wrap: break-word;
 }
 
+article.tweets-article:hover {
+  box-shadow: 5px 10px;
+}
+
+
 header.tweets-container-header {
   display: flex;
   align-items: center;
